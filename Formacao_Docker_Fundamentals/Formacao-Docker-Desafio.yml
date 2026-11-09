@@ -1,0 +1,8 @@
+services:
+    apache:
+        image:  httpd:latest
+        container_name: WEB_SERVER
+        ports:
+            -   "80:80"
+        volumes:
+            -   /home/site_teste:/usr/local/apache2/htdocs/
